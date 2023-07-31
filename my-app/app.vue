@@ -1,9 +1,9 @@
 <template>
   <div>
-    <header class="border-b border-gray-300 mb-3">
+    <header class="border-b bg-gradient-to-r from-sky-500 to-indigo-500 border-gray-300 mb-3">
       <Navigation />
     </header>
-    <main>
+    <main class="font-serif p-6">
       <NuxtPage />
     </main>
     <footer>
@@ -14,7 +14,7 @@
 
 <script>
 // Importing Navigation and Footer Components
-import Navigation from "~/components/navigation.vue"
+import Navigation from "~/components/navigation.vue";
 import FooterComponent from "~/components/footer.vue";
 
 export default {
