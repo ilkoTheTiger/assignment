@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col h-screen justify-between">
     <header class="border-b bg-gradient-to-r from-sky-500 to-indigo-500 border-gray-300 mb-3">
       <Navigation />
     </header>
-    <main class="font-serif p-6">
+    <main class="font-serif p-6 mb-auto">
       <NuxtPage />
     </main>
     <footer>
