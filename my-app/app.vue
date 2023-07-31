@@ -2,26 +2,26 @@
   <div>
     <header>
       <nav>
-        <li><a href="/" class="">Home</a></li>
-        <li><a href="/home" class="">Home</a></li>
-        <li><a href="/posts" class="">Home</a></li>
-        <li><a href="/home" class="">Home</a></li>
+        <nuxt-link to="/home">Home</nuxt-link>
+        <nuxt-link to="/posts">Posts</nuxt-link>
+        <!-- <nuxt-link to="/posts/{id}"></nuxt-link> -->
       </nav>
     </header>
     <main>
-      <HomePage />
+      <NuxtPage />
     </main>
-
+    <footer>All Rights Reserved! &copy; 2023</footer>
   </div>
 </template>
 
-
 <script>
-    import HomePage from '~/pages/home.vue'
+import HomePage from "~/pages/home.vue";
+import PostsPage from "~/pages/posts.vue";
 
-    export default {
-        components: {
-            HomePage
-        }
-    }
+export default {
+  components: {
+    HomePage,
+    PostsPage,
+  },
+};
 </script>
