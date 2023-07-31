@@ -2,6 +2,7 @@
   <div>
     <header>
       <nav>
+        <li><a href="/" class="">Home</a></li>
         <li><a href="/home" class="">Home</a></li>
         <li><a href="/posts" class="">Home</a></li>
         <li><a href="/home" class="">Home</a></li>
