@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header class="border-b border-gray-300 mb-3">
       <Navigation />
     </header>
     <main>
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+// Importing Navigation and Footer Components
 import Navigation from "~/components/navigation.vue"
 import FooterComponent from "~/components/footer.vue";
 
