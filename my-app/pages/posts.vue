@@ -1,6 +1,16 @@
+<script setup>
+const { data: posts } = await useFetch(
+  "https://jsonplaceholder.typicode.com/posts/"
+);
+</script>
+
 <template>
-  <div>
-    <!-- This page correctly has only one single root element -->
-    <h1 class="text-3xl font-bold underline">Posts page!</h1>
+  <div v-for="post in posts">
+    <ul>
+      <li>
+        {{ post.title }}
+        {{ post.body }}
+      </li>
+    </ul>
   </div>
 </template>

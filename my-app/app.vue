@@ -1,8 +1,4 @@
 <script setup>
-const { data: posts } = await useFetch(
-  "https://jsonplaceholder.typicode.com/posts/"
-);
-
 // Importing Navigation and Footer Components
 import Navigation from "~/components/navigation.vue";
 import FooterComponent from "~/components/footer.vue";
@@ -17,13 +13,6 @@ import FooterComponent from "~/components/footer.vue";
     </header>
     <main class="font-serif p-6 mb-auto">
       <NuxtPage />
-      <div v-for="post in posts">
-        <ul>
-          <li>
-            {{ posts }}
-          </li>
-        </ul>
-      </div>
     </main>
     <footer>
       <FooterComponent />
