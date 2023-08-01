@@ -7,11 +7,13 @@ import FooterComponent from "~/components/footer.vue";
 <template>
   <div class="flex flex-col h-screen justify-between">
     <header
-      class="border-b bg-gradient-to-r from-sky-500 to-indigo-500 border-gray-300 mb-3"
+      class="border-b bg-gradient-to-r from-sky-400 to-indigo-400 border-gray-200"
     >
       <Navigation />
     </header>
-    <main class="font-serif p-6 mb-auto">
+    <main
+      class="font-serif p-6 mb-auto bg-gradient-to-r from-sky-500 to-indigo-500"
+    >
       <NuxtPage />
     </main>
     <footer>
