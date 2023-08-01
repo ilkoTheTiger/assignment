@@ -2,8 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   routeRules: {
-    "/contact.html": { redirect: "/contact" },
-    "/external-route": { redirect: "https://example.com" },
+    "/": { redirect: "/home" },
   },
   css: ["~/assets/css/main.css"],
   postcss: {
