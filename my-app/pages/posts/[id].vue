@@ -16,8 +16,10 @@ const { data: post } = await useFetch(
       Post Details
     </h2>
     <article class="post w-full px-7 py-1 rounded-xl">
-      <!-- Re-using the Post Card template component and passing the Post Data -->
-      <PostCard :post="post" />
+      <NuxtLink to="/posts">
+        <!-- Re-using the Post Card template component and passing the Post Data -->
+        <PostCard :post="post" />
+      </NuxtLink>
     </article>
   </section>
 </template>

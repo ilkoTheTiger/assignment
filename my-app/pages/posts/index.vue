@@ -1,4 +1,5 @@
 <script setup>
+// Getting all posts
 const { data: posts } = await useFetch(
   "https://jsonplaceholder.typicode.com/posts/"
 );
@@ -16,6 +17,7 @@ import PostCard from "~/components/PostCard.vue";
     </h2>
     <article v-for="post in posts" class="post w-full px-7 py-1 rounded-xl">
       <NuxtLink :to="'/posts/' + post.id">
+        <!-- Re-using the Post Card template component and passing the Post Data -->
         <PostCard :post="post" />
       </NuxtLink>
     </article>
