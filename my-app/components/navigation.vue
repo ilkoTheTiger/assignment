@@ -8,7 +8,6 @@
         <li>
           <nuxt-link to="/posts">Posts</nuxt-link>
         </li>
-        <!-- <nuxt-link to="/posts/{id}"></nuxt-link> -->
       </ul>
     </nav>
   </div>

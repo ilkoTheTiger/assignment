@@ -14,7 +14,7 @@ import FooterComponent from "~/components/FooterComponent.vue";
       <Navigation />
     </header>
 
-    <main class="min-h-screen font-serif p-6 mb-auto">
+    <main class="font-serif p-6 mb-auto bg-gradient-to-r from-sky-500 to-indigo-500">
       <NuxtPage />
     </main>
     
